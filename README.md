@@ -4,8 +4,8 @@
 
 ### Create Project with Dropwizard Archetype
 
-'''https://github.com/dropwizard/dropwizard/tree/master/dropwizard-archetypes'''
-'''mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DarchetypeVersion=[REPLACE ME WITH A VALID DROPWIZARD VERSION]'''
+```https://github.com/dropwizard/dropwizard/tree/master/dropwizard-archetypes```
+```mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DarchetypeVersion=1.1.1```
 
 You are gona be prompted for some maven coordinates
 groupID := an ID which groups associated projects under one name (it should resemble a domain under your control)
