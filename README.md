@@ -4,7 +4,9 @@
 
 ### Create Project with Dropwizard Archetype
 
-```https://github.com/dropwizard/dropwizard/tree/master/dropwizard-archetypes```
+[The Dropwizard Archetype](https://github.com/dropwizard/dropwizard/tree/master/dropwizard-archetypes)
+
+I used this command to start the generation
 ```mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes -DarchetypeArtifactId=java-simple -DarchetypeVersion=1.1.1```
 
 You are gona be prompted for some maven coordinates
