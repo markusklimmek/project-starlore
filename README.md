@@ -32,5 +32,11 @@ shaded := should be true, uses Shade Plugin (https://maven.apache.org/plugins/ma
  gets you a
  ```{"code":404,"message":"HTTP 404 Not Found"}``` which is good I suppose, because we have no real endpoint, that could give you an answer.
 
+### We want to view something real
+1. Configuration: Every dropwizard app got a configuration class. It is the bridge between the app and the configuration file.
+    * The configuration file is a yaml file and will be (de-)serialized with Jackson (for a list of usable anotations look here: https://github.com/FasterXML/jackson-docs/wiki/JacksonAnnotations
+    * The values of the fields in the class can be validated with Hibernate (http://docs.jboss.org/hibernate/validator/4.2/reference/en-US/html_single/#validator-defineconstraints-builtin)
+
+
 ### Facts for the end
 * automatically generated files should not be put into a vcs
