@@ -31,3 +31,6 @@ shaded := should be true, uses Shade Plugin (https://maven.apache.org/plugins/ma
 ### Starting, after doing more or less nothing
  gets you a
  ```{"code":404,"message":"HTTP 404 Not Found"}``` which is good I suppose, because we have no real endpoint, that could give you an answer.
+
+### Facts for the end
+* automatically generated files should not be put into a vcs
