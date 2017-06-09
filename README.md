@@ -26,3 +26,8 @@ name := a short description (all class names relate to this field)
 description := a description :) (but it is not needed for dropwizard projects)
 
 shaded := should be true, uses Shade Plugin (https://maven.apache.org/plugins/maven-shade-plugin/usage.html), which creates a uber-jar (i.e. every dependency is within this jar) and renames (shades)  dependencies if necessary. 
+
+
+### Starting, after doing more or less nothing
+ gets you a
+ ```{"code":404,"message":"HTTP 404 Not Found"}``` which is good I suppose, because we have no real endpoint, that could give you an answer.
