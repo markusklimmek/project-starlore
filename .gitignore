@@ -4,3 +4,6 @@
 
 # Where the magic happens
 starlore/target/
+
+# This one is created by the shade plugin ()
+/starlore/dependency-reduced-pom.xml
