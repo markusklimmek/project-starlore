@@ -1,1 +1,6 @@
+# IntelliJ related files and modulefiles
 .idea/
+*.iml
+
+# Where the magic happens
+starlore/target/
