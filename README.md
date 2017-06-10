@@ -36,6 +36,24 @@ shaded := should be true, uses Shade Plugin (https://maven.apache.org/plugins/ma
 1. Configuration: Every dropwizard app got a configuration class. It is the bridge between the app and the configuration file.
     * The configuration file is a yaml file and will be (de-)serialized with Jackson (for a list of usable anotations look here: https://github.com/FasterXML/jackson-docs/wiki/JacksonAnnotations
     * The values of the fields in the class can be validated with Hibernate (http://docs.jboss.org/hibernate/validator/4.2/reference/en-US/html_single/#validator-defineconstraints-builtin)
+2. The Application Class
+    * Create a representation Class (that means a class which can hold data to (de-)serialization.) We can use here again Jackson for this. For further reference: https://github.com/FasterXML/jackson-docs/wiki/JacksonAnnotations . This one goes into the API subfolder, because it describes the to be expected format of your answer.
+    * We need a Resource class, which delivers the content to the customer (i.e. the browser, or another webclient)
+    * And we need to tell the application class, that there is this crazy resource which can do so many unbelievable stuff.
+
+### Project Organization
+* api: Representations.
+* cli: Commands
+* client: Client implementation for your application
+* core: Domain implementation
+* jdbi: Database access classes
+* health: Health Checks
+* resources: Resources
+* MyApplication: The application class
+* MyApplicationConfiguration: configuration class
+
+This one is copied from here: http://www.dropwizard.io/1.1.0/docs/manual/core.html#organizing-your-project
+
 
 
 ### Facts for the end
