@@ -4,4 +4,4 @@ logging:
     com.justcoffee.projects: DEBUG
 
 template: Hello, %s!
-defaultname: Stranger
+defaultName: Stranger
