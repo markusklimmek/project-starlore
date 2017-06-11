@@ -1,9 +1,11 @@
 package com.justcoffee.projects;
 
 import com.justcoffee.projects.resources.HelloWorldResource;
+import com.justcoffee.projects.resources.IndexResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.dropwizard.views.ViewBundle;
 
 public class StarloreApplication extends Application<StarloreConfiguration> {
 
@@ -18,7 +20,7 @@ public class StarloreApplication extends Application<StarloreConfiguration> {
 
     @Override
     public void initialize(final Bootstrap<StarloreConfiguration> bootstrap) {
-        // TODO: application initialization
+        bootstrap.addBundle(new ViewBundle<StarloreConfiguration>());
     }
 
     @Override
@@ -29,6 +31,8 @@ public class StarloreApplication extends Application<StarloreConfiguration> {
                 configuration.getDefaultName()
         );
         environment.jersey().register(resource);
+        final IndexResource indexResource = new IndexResource();
+        environment.jersey().register(indexResource);
 
     }
 
