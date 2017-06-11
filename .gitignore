@@ -7,3 +7,6 @@ starlore/target/
 
 # This one is created by the shade plugin ()
 /starlore/dependency-reduced-pom.xml
+
+# Logs should not be pushed
+*.log
