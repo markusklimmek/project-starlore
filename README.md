@@ -54,7 +54,18 @@ shaded := should be true, uses Shade Plugin (https://maven.apache.org/plugins/ma
 
 This one is copied from here: http://www.dropwizard.io/1.1.0/docs/manual/core.html#organizing-your-project
 
+### Turn debugging on
+with the help of this tutorial:
+(http://mikelynchgames.com/software-development/how-to-run-a-dropwizard-application-in-intellij-idea/)
+
+TODO: put these steps into this tutorial (and my thoughts)
+
+### FTLs and why they can't find specific values
+Why can he find the template, with the class that provides this template, but cannot find the variable within this class???
+
+
 
 
 ### Facts for the end
 * automatically generated files should not be put into a vcs
+* Debugging is most times very helpful
