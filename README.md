@@ -62,9 +62,9 @@ TODO: put these steps into this tutorial (and my thoughts)
 
 ### FTLs and why they can't find specific values
 Why can he find the template, with the class that provides this template, but cannot find the variable within this class???
-
-
-
+My guess is that it was just a problem with the visibility of the class in relation to the ftl parser.
+The View class was package private, not public. That should explain the problem.
+(https://github.com/markusklimmek/project-starlore/commit/8672ad470d7751ee31c039bf52afc3b1f2f4f199)
 
 ### Facts for the end
 * automatically generated files should not be put into a vcs
