@@ -2,6 +2,6 @@
 <html>
     <body>
         <!-- calls getName() and sanitizes it -->
-        <h1>Hello, </h1>
+        <h1>Hello, ${name?html}!</h1>
     </body>
 </html>

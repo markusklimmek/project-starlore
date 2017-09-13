@@ -5,7 +5,7 @@ import io.dropwizard.views.View;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-class IndexView extends View {
+public class IndexView extends View {
 
     @JsonProperty
     private String name;
@@ -21,7 +21,7 @@ class IndexView extends View {
 
     public String getName() {
         logger.debug("getName");
-        return "my best wishes";
+        return name;
     }
 
 }
