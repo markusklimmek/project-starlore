@@ -66,6 +66,9 @@ My guess is that it was just a problem with the visibility of the class in relat
 The View class was package private, not public. That should explain the problem.
 (https://github.com/markusklimmek/project-starlore/commit/8672ad470d7751ee31c039bf52afc3b1f2f4f199)
 
+### How to create a branch for github and how to delete it
+How does that work?
+
 ### Facts for the end
 * automatically generated files should not be put into a vcs
 * Debugging is most times very helpful
