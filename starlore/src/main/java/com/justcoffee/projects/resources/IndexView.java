@@ -10,12 +10,11 @@ public class IndexView extends View {
     @JsonProperty
     private String name;
 
-    private Logger logger;
+    private Logger logger = LoggerFactory.getLogger("com.justcoffee.projects.resources.IndexView");
 
     public IndexView(String name) {
         super("index.ftl");
         this.name = name;
-        logger = LoggerFactory.getLogger("com.justcoffee.projects.resources.IndexView");
         logger.debug(name);
     }
 

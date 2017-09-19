@@ -12,9 +12,10 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.TEXT_HTML)
 public class IndexResource {
 
+    private Logger logger = LoggerFactory.getLogger("com.justcoffee.projects.resources.IndexResource");
+
     @GET
     public IndexView getIndex() {
-        Logger logger = LoggerFactory.getLogger("com.justcoffee.projects.resources.IndexResource");
         logger.debug("I am here");
         return new IndexView("Markus Klimmek");
     }
