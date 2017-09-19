@@ -69,6 +69,14 @@ The View class was package private, not public. That should explain the problem.
 ### How to create a branch for github and how to delete it
 How does that work?
 
+## Testing with dropwizward
+
+For further reference take a look here:(http://www.dropwizard.io/1.1.0/docs/manual/testing.html)
+
+### Endpointtesting
+1. You need to create a ResourceTestRule which is linked (via a builder) to the class under test.
+2. Create a test which calls the ResourceTestRule with an appropriate path and inputs
+
 ### Facts for the end
 * automatically generated files should not be put into a vcs
 * Debugging is most times very helpful
