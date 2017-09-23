@@ -4,6 +4,8 @@ import io.dropwizard.testing.junit.ResourceTestRule;
 import org.junit.ClassRule;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SolarSystemsResourceTest {
@@ -16,6 +18,10 @@ public class SolarSystemsResourceTest {
 
     @Test
     public void testGetSolarsystem() {
-        assertThat(resources.target("/solarsystems/list").request().get(String.class)).isEqualTo("Help");
+        ArrayList<String> systems = new ArrayList<>();
+        systems.add("Sol");
+        systems.add("Alpha Centauri");
+        systems.add("Sirius");
+        assertThat(resources.target("/solarsystems/list").request().get(ArrayList.class)).isEqualTo(systems);
     }
 }
