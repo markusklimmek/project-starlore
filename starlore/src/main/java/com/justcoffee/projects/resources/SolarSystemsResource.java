@@ -15,7 +15,6 @@ public class SolarSystemsResource {
     @Path("/list")
     @GET
     public List<String> getSolarsystemsList() {
-        List<String> systems = Arrays.asList("Sol", "Alpha Centauri", "Sirius");
-        return systems;
+        return Arrays.asList("Sol", "Alpha Centauri", "Sirius");
     }
 }

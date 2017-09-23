@@ -21,7 +21,7 @@ public class StarloreApplication extends Application<StarloreConfiguration> {
 
     @Override
     public void initialize(final Bootstrap<StarloreConfiguration> bootstrap) {
-        bootstrap.addBundle(new ViewBundle<StarloreConfiguration>());
+        bootstrap.addBundle(new ViewBundle<>());
     }
 
     @Override
