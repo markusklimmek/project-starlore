@@ -2,7 +2,10 @@ package com.justcoffee.projects.core;
 
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 public class PlanetTest {
 
@@ -17,14 +20,13 @@ public class PlanetTest {
      }
 
     @Test
-    public void aPlanetIsInAClass() {
+    public void aPlanetIsClassified() {
         Planet planet = new Planet("Earth");
-        //TODO: A value must be set, not important which one
-        assertEquals(PlanetClassification.EARTHLIKE, planet.getPlanetClassification());
+        assertThat(planet.getPlanetClassification(), is(instanceOf(PlanetClassification.class)));
     }
 
     @Test
-    public void weCanSetThePlanetsClassAtCreation() {
+    public void weCanSetThePlanetsClassificationAtCreation() {
         Planet planet = new Planet("Mars", PlanetClassification.MARTIAN);
         assertEquals(PlanetClassification.MARTIAN, planet.getPlanetClassification());
     }
