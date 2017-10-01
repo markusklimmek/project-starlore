@@ -27,7 +27,7 @@ public class PlanetTest {
 
     @Test
     public void weCanSetThePlanetsClassificationAtCreation() {
-        Planet planet = new Planet("Mars", PlanetClassification.MARTIAN);
-        assertEquals(PlanetClassification.MARTIAN, planet.getPlanetClassification());
+        Planet planet = new Planet("Mars", PlanetClassification.GASGIANT);
+        assertEquals(PlanetClassification.GASGIANT, planet.getPlanetClassification());
     }
 }
